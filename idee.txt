@@ -1,0 +1,21 @@
+Le jeux se déroule dans une toure a plusieur étage qui font office de niveau.
+On part du haut de la tour pour rejoindre la sortie qui est en bas. 
+Tour = 6 niveau 
+
+Planete en guerre style 3ème guerre mondiale. Les riche se réfugient dans une tour antique qui aurait découver et caher au rest du monde mais rentre par la sortie et
+se retrouve coincé au denier étage. Une grande partie meur et une population survie et fonde une mini civilisation a cette étage. 
+Notre jeux se passe dans la tour des centaine d'année après la ou notre héroine trouve par hazard un moyen de comunication et établie une communication avec une perssonne survivante de l'exterieur
+qui veut se venger de se qui es passer il y a longtemt et qui va la guider pour sortir de la tour et ouvrir tout les passages afain de l'henvair et se venger. 
+
+Mini monde dans chaque étage (a peux pres 8 caméra  en x et 3 en y)
+
+Bosse entre chaque palier tuable avec l'objet du niveau 
+Pour acceder au boss resoudre enigme ( chansson, texte, simbole, ... )
+
+
+structure niveau : 
+Arivée -> Exploration -> Decouverte de l'objet -> Combat bosse
+
+Gamplay 
+Perssonage très faible peut vaincre ses adverssair grasse au conseille du téléphon
+eur 
