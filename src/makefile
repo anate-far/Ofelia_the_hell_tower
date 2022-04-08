@@ -24,3 +24,6 @@ clean :
 
 mrproper : clean 
 	rm -rf $(EXEC)
+
+zip : 
+	zip src.zip *

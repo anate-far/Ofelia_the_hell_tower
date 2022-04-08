@@ -6,6 +6,7 @@
 #include "constante.h"
 #include "tools_sdl.h"
 #include "player.h"
+#include "input.h"
 
 int main(void)
 {
@@ -18,10 +19,12 @@ int main(void)
 
 	if(SDL_CreateWindowAndRenderer(SIZE_WINDOW_W, SIZE_WINDOW_H,0, &window, &renderer) != 0)
 		fprintf(stderr, "Impossible de creer la fenetre et le rendu\n");
-	
 
-	//Création Player
+	//Create Player
 	Player* player = player_create(renderer);
+	//Create thread animation player
+	SDL_Thread* t_animation;
+	t_animation = SDL_CreateThread(player_animation, "player_animation", player);
 
 	while(in.window_is_open)
 	{
@@ -29,14 +32,15 @@ int main(void)
 
 		SDL_RenderClear(renderer);
 
-		//Affichage du player
-		player_display(player, renderer);
+		//Display player
+		player_display(player);
 		
 		SDL_RenderPresent(renderer);
 	}
+	
 
-	//Destruction player
-//	player_destroy(player);
+	//Destroy Player
+	player_destroy(player);
 
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);

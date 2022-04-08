@@ -5,7 +5,6 @@
 #include <SDL_image.h>
 
 #include "tools_sdl.h"
-#include "player.h"
 #include "constante.h"
 
 //Gestion error
@@ -55,7 +54,7 @@ SDL_Texture* create_texture(SDL_Renderer* renderer, const char* name_img)
 
 
 
-//Gestion input
+/*//Gestion input
 void input_key_init(input_keys* in)
 {
 	for(int i = 0; i <= SDL_NUM_SCANCODES; i++)
@@ -64,7 +63,7 @@ void input_key_init(input_keys* in)
 }
 
 
-void update_event(input_keys* in, Player* player)
+void update_event(input_keys* in)
 {
 	SDL_Event event;
 	while(SDL_PollEvent(&event))
@@ -89,20 +88,8 @@ void update_event(input_keys* in, Player* player)
 	if(in->key[SDL_SCANCODE_ESCAPE])
 		in->window_is_open = SDL_FALSE;
 
-	//Player movement
-	if(in->key[SDL_SCANCODE_UP])
-		player_movement(player, UP);	
-
-	if(in->key[SDL_SCANCODE_DOWN])
-		player_movement(player, DOWN);
-
-	if(in->key[SDL_SCANCODE_LEFT])
-		player_movement(player, LEFT);
-	
-	if(in->key[SDL_SCANCODE_RIGHT])
-		player_movement(player, RIGHT);
 
 	SDL_Delay(16);
 		
 	
-}
+}*/
